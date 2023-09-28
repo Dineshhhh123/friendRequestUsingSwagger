@@ -6,7 +6,6 @@ const FriendController = require('../controller/friendController')
 const { authenticateUser } = require('../middlewares/authMiddleware');
 
 const validator = require('../middlewares/Validation')
-// const authController = new AuthController();
 
  
 
@@ -213,5 +212,4 @@ postRouter.post('/respond/:requestId/:authorization', authenticateUser, FriendCo
  *         description: Server Error
  */
 postRouter.get('/listfriends/:authorization', authenticateUser, FriendController.listFriends);
-console.log('hi')
 module.exports = postRouter

@@ -31,14 +31,12 @@ const options = {
                 type: 'string',
                 description: 'Email of the user',
               },
-              // Add more properties as needed
             },
           },
-          // Define other schemas as needed for your API
         },
     },
   },
-  apis: ['./src/routers/user.js'], // Specify the path to your route files
+  apis: ['./src/routers/user.js'], 
 };
 
 const specs = swaggerJsdoc(options);
